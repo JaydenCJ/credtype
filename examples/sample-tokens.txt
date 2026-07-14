@@ -1,0 +1,29 @@
+# Synthetic sample tokens — one per family. NOT real credentials.
+# Structure (and checksums where they exist) are valid so credtype can verify.
+
+# GitHub classic PAT — last 6 chars are the Base62 CRC-32 of the body (checksum OK)
+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
+
+# AWS access key ID — 12-digit account id is decoded from the Base32 body
+AKIAIOSFODNN7EXAMPLE
+
+# JSON Web Token — alg=none, credtype flags it as UNSIGNED
+eyJhbGciOiJub25lIn0.eyJ4IjoxfQ.
+
+# Payment card (Visa test PAN) — Luhn checksum verifies
+4111111111111111
+
+# UUID v4
+9b2e4f1a-3c5d-4e6f-8a9b-0c1d2e3f4a5b
+
+# Stripe test secret key (structural only; all-A body, obviously synthetic)
+sk_test_AAAAAAAAAAAAAAAAAAAAAAAA
+
+# Slack bot token (structural only; zero/all-A segments, obviously synthetic)
+xoxb-0000000000-0000000000000-AAAAAAAAAAAAAAAAAAAAAAAA
+
+# Google API key (39 chars, structural only; all-A body, obviously synthetic)
+AIzaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+# Unknown high-entropy blob — reported as a plausible secret, no family matched
+9f8e7d6c5b4a39281706f5e4d3c2b1a0

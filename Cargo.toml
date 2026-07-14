@@ -1,0 +1,18 @@
+[package]
+name = "credtype"
+version = "0.1.0"
+edition = "2021"
+authors = ["JaydenCJ"]
+rust-version = "1.75"
+description = "file(1) for secrets: identify and structurally validate one leaked token by prefix, format, and embedded checksum — fully offline."
+license = "MIT"
+repository = "https://github.com/JaydenCJ/credtype"
+keywords = ["secrets", "tokens", "credentials", "checksum", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+# None. credtype is std-only by design: offline, deterministic, zero supply chain.
+
+[profile.release]
+strip = true
+lto = true
