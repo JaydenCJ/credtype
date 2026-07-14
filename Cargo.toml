@@ -2,7 +2,7 @@
 name = "credtype"
 version = "0.1.0"
 edition = "2021"
-authors = ["JaydenCJ"]
+authors = ["JaydenCJ <aisingioro.kiyon@gmail.com>"]
 rust-version = "1.75"
 description = "file(1) for secrets: identify and structurally validate one leaked token by prefix, format, and embedded checksum — fully offline."
 license = "MIT"
