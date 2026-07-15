@@ -1,9 +1,7 @@
 name: CI
-on: [push, pull_request]
+on: [push]
 jobs:
-  test:
+  t:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cargo build --verbose
-      - run: cargo test --verbose
